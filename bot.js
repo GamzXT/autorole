@@ -6,4 +6,4 @@ client.on('guildMemberAdd', member => {
 	mem.addRole('589823111893876756');
 })
 
-client.login('NTg5ODI1NTg3NzYyMjk4OTAw.XQZT6w.Zv_Fke3LTwsFzbtMwPQ8dvdaf2s');
+client.login(process.env.BOT_TOKEN);
