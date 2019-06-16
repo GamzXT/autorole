@@ -2,7 +2,8 @@ const djs = require('discord.js');
 const client = new djs.Client();
 
 client.on('guildMemberAdd', function(mem){
-	mem.addRole('589823111893876756');
+	const role = mem.guild.roles.find('id', '589826390917120022');
+	mem.addRole(role);
 });
 
 client.login(process.env.BOT_TOKEN);
